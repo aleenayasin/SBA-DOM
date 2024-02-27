@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBA-DOM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="app">
+        <h1>Task Manager</h1>
+    
+        <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="Add a new task" required>
+            <input type="date" id="dueDateInput" style ="margin-top: 20px;">
+            <button type="submit" style ="margin-top: 20px;">Add Task</button>
+        </form>
+    
+        <div class="tables-container">
+            <table id="todoTasks">
+            
+                <thead>
+                <caption styles=""> TODO Tasks Table</caption>
+                <tr>
+                    <th>Task</th>
+                    <th>Due Date</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+    
+            <table id="completedTasks">
+            <caption styles=""> Completed Tasks Table</caption>
+                <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Due Date</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
